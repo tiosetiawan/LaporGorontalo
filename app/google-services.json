@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "614873672284",
+    "firebase_url": "https://lapor-gorontalo.firebaseio.com",
+    "project_id": "lapor-gorontalo",
+    "storage_bucket": "lapor-gorontalo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614873672284:android:5c8c31256b99a402",
+        "android_client_info": {
+          "package_name": "com.example.kotaluwukcom.laporgorontalo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614873672284-ldd4d350c88pvorh35bn69ub40rtrfc5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kotaluwukcom.laporgorontalo",
+            "certificate_hash": "5a61110068e71ded44a3d9305b59a172038e84c5"
+          }
+        },
+        {
+          "client_id": "614873672284-hvoa1747ur4ci72omo861pdl72d850gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjX3Aom-RGaaRYK85nVcpcAGguD7itTiw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614873672284-hvoa1747ur4ci72omo861pdl72d850gv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/profile"
+    tools:context=".fragment.ProfileFragment">
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshprof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertcial_margin">
+
+
+
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="left"
+                android:src="@drawable/user"/>
+
+
+        </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="50dp"
+                    android:layout_height="match_parent">
+
+                 <!--<TextView
+                        android:id="@+id/jumlap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/startblue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="melapor"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="10sp"
+                        />-->
+                    <Button
+                        android:id="@+id/editpass"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/daftar_bg"
+                        android:text="Ganti Password"
+                        android:textSize="10sp"
+                        />
+
+
+
+                    <Button
+                        android:id="@+id/editprof"
+                        android:layout_width="150dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/daftar_bg"
+                        android:text="Edit Profil"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/foto"
+                        android:paddingTop="10dp"
+                        android:text="Satrio"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#bbb"/>
+
+
+        <ScrollView
+
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertcial_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/idmas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Email"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorPrimary"
+
+                />
+            <TextView
+                android:id="@+id/email"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Wiliam@gmail.com"
+                />
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:background="#bbb"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="No. Telpon"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorPrimary"
+                />
+            <TextView
+                android:id="@+id/notelpon"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="+266 225 225"/>
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:background="#bbb"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Alamat"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorPrimary"
+                />
+            <TextView
+                android:id="@+id/alamat"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Alamat"/>
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:background="#bbb"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Umur"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorPrimary"
+                />
+            <TextView
+                android:id="@+id/umur"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Umur"/>
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:background="#bbb"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Pekerjaan"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorPrimary"
+                />
+            <TextView
+                android:id="@+id/kerja"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="pekerjaan"/>
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:background="#bbb"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/daftar_bg"
+                    android:text="Keluar"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+ <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+</LinearLayout>

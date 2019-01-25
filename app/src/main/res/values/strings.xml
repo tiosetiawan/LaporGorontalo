@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LAPOR GORONTALO</string>
+    <string name="nama">Hi, %s :)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
